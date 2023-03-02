@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Timer App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="timerContainer">
+      <div class="displayContainer">
+        <input id="hoursInput" type="number" value="00" min="0" />
+        <input id="minutesInput" type="number" min="0" max="59" value="00" />
+        <input
+          id="secondsInput"
+          type="number"
+          min="0"
+          max="59"
+          value="00"
+          style="border: none"
+        />
+      </div>
+      <div class="buttonContainer">
+        <button id="startBtn">Start</button>
+        <button id="pauseBtn">Pause</button>
+        <button id="resetBtn">Reset</button>
+      </div>
+    </div>
+    <div id="msgContainer">
+      <p id="msgBox">Time's Up!!!</p>
+      <button id="okBtn">Ok</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
